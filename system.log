@@ -1,0 +1,398 @@
+2023-08-24 13:24:09,533 DEBUG Request: method=post url=https://api.telegram.org/bot6192798371:{TOKEN}/setMyCommands params={'commands': '[{"command": "start", "description": "\\u0417\\u0430\\u043f\\u0443\\u0441\\u043a \\u0431\\u043e\\u0442\\u0430"}]'} files=None
+2023-08-24 13:24:09,535 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-24 13:24:09,875 DEBUG https://api.telegram.org:443 "POST /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/setMyCommands?commands=%5B%7B%22command%22%3A+%22start%22%2C+%22description%22%3A+%22%5Cu0417%5Cu0430%5Cu043f%5Cu0443%5Cu0441%5Cu043a+%5Cu0431%5Cu043e%5Cu0442%5Cu0430%22%7D%5D HTTP/1.1" 200 25
+2023-08-24 13:24:09,875 DEBUG The server returned: 'b'{"ok":true,"result":true}''
+2023-08-24 13:24:09,876 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': -1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:24:12,076 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=-1&timeout=20 HTTP/1.1" 200 368
+2023-08-24 13:24:12,077 DEBUG The server returned: 'b'{"ok":true,"result":[{"update_id":727919354,\n"message":{"message_id":9468,"from":{"id":1029045407,"is_bot":false,"first_name":"Pr@ctic","username":"Practic_old","language_code":"en"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1692858252,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}''
+2023-08-24 13:24:12,077 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getMe params=None files=None
+2023-08-24 13:24:12,158 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getMe HTTP/1.1" 200 211
+2023-08-24 13:24:12,158 DEBUG The server returned: 'b'{"ok":true,"result":{"id":6192798371,"is_bot":true,"first_name":"template_test_bot","username":"template_test2023_bot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false}}''
+2023-08-24 13:24:12,158 INFO Starting your bot with username: [@template_test2023_bot]
+2023-08-24 13:24:12,159 INFO Started polling.
+2023-08-24 13:24:12,159 DEBUG Received task
+2023-08-24 13:24:12,159 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': -1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:24:12,161 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-24 13:24:12,497 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=-1&timeout=20 HTTP/1.1" 200 368
+2023-08-24 13:24:12,497 DEBUG The server returned: 'b'{"ok":true,"result":[{"update_id":727919354,\n"message":{"message_id":9468,"from":{"id":1029045407,"is_bot":false,"first_name":"Pr@ctic","username":"Practic_old","language_code":"en"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1692858252,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}''
+2023-08-24 13:24:12,498 DEBUG Skipped all pending messages
+2023-08-24 13:24:12,498 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:24:12,577 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 368
+2023-08-24 13:24:12,578 DEBUG The server returned: 'b'{"ok":true,"result":[{"update_id":727919354,\n"message":{"message_id":9468,"from":{"id":1029045407,"is_bot":false,"first_name":"Pr@ctic","username":"Practic_old","language_code":"en"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1692858252,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}''
+2023-08-24 13:24:12,578 DEBUG Received 1 new updates
+2023-08-24 13:24:12,579 DEBUG Task complete
+2023-08-24 13:24:12,579 DEBUG Received task
+2023-08-24 13:24:12,580 DEBUG Received task
+2023-08-24 13:24:12,581 DEBUG Request: method=post url=https://api.telegram.org/bot6192798371:{TOKEN}/sendMessage params={'chat_id': '1029045407', 'text': '\n    Бот использоуется как шаблон\n    ', 'reply_markup': '{"inline_keyboard": [[{"text": "\\u041f\\u043e\\u0433\\u043d\\u0430\\u043b\\u0438 \\u0434\\u0430\\u043b\\u044c\\u0448\\u0435?", "callback_data": "next"}]]}', 'parse_mode': 'HTML'} files=None
+2023-08-24 13:24:12,586 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-24 13:24:12,581 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919355, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:24:12,969 DEBUG https://api.telegram.org:443 "POST /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/sendMessage?chat_id=1029045407&text=%0A++++%D0%91%D0%BE%D1%82+%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D1%83%D0%B5%D1%82%D1%81%D1%8F+%D0%BA%D0%B0%D0%BA+%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%0A++++&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%5Cu041f%5Cu043e%5Cu0433%5Cu043d%5Cu0430%5Cu043b%5Cu0438+%5Cu0434%5Cu0430%5Cu043b%5Cu044c%5Cu0448%5Cu0435%3F%22%2C+%22callback_data%22%3A+%22next%22%7D%5D%5D%7D&parse_mode=HTML HTTP/1.1" 200 572
+2023-08-24 13:24:12,970 DEBUG The server returned: 'b'{"ok":true,"result":{"message_id":9469,"from":{"id":6192798371,"is_bot":true,"first_name":"template_test_bot","username":"template_test2023_bot"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1692858252,"text":"\\u0411\\u043e\\u0442 \\u0438\\u0441\\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0443\\u0435\\u0442\\u0441\\u044f \\u043a\\u0430\\u043a \\u0448\\u0430\\u0431\\u043b\\u043e\\u043d","reply_markup":{"inline_keyboard":[[{"text":"\\u041f\\u043e\\u0433\\u043d\\u0430\\u043b\\u0438 \\u0434\\u0430\\u043b\\u044c\\u0448\\u0435?","callback_data":"next"}]]}}}''
+2023-08-24 13:24:12,970 DEBUG Task complete
+2023-08-24 13:24:32,676 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=727919355&timeout=20 HTTP/1.1" 200 23
+2023-08-24 13:24:32,677 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-24 13:24:32,677 DEBUG Received 0 new updates
+2023-08-24 13:24:32,677 DEBUG Task complete
+2023-08-24 13:24:32,677 DEBUG Received task
+2023-08-24 13:24:32,677 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919355, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:24:38,446 INFO KeyboardInterrupt received.
+2023-08-24 13:24:38,446 INFO Stopped polling.
+2023-08-24 13:24:38,446 ERROR Infinity polling: polling exited
+2023-08-24 13:24:38,446 ERROR Break infinity polling
+2023-08-24 13:24:39,572 DEBUG Request: method=post url=https://api.telegram.org/bot6192798371:{TOKEN}/setMyCommands params={'commands': '[{"command": "start", "description": "\\u0417\\u0430\\u043f\\u0443\\u0441\\u043a \\u0431\\u043e\\u0442\\u0430"}]'} files=None
+2023-08-24 13:24:39,574 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-24 13:24:39,909 DEBUG https://api.telegram.org:443 "POST /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/setMyCommands?commands=%5B%7B%22command%22%3A+%22start%22%2C+%22description%22%3A+%22%5Cu0417%5Cu0430%5Cu043f%5Cu0443%5Cu0441%5Cu043a+%5Cu0431%5Cu043e%5Cu0442%5Cu0430%22%7D%5D HTTP/1.1" 200 25
+2023-08-24 13:24:39,910 DEBUG The server returned: 'b'{"ok":true,"result":true}''
+2023-08-24 13:24:39,910 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': -1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:24:41,329 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=-1&timeout=20 HTTP/1.1" 200 368
+2023-08-24 13:24:41,330 DEBUG The server returned: 'b'{"ok":true,"result":[{"update_id":727919355,\n"message":{"message_id":9470,"from":{"id":1029045407,"is_bot":false,"first_name":"Pr@ctic","username":"Practic_old","language_code":"en"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1692858281,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}''
+2023-08-24 13:24:41,331 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getMe params=None files=None
+2023-08-24 13:24:41,447 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getMe HTTP/1.1" 200 211
+2023-08-24 13:24:41,448 DEBUG The server returned: 'b'{"ok":true,"result":{"id":6192798371,"is_bot":true,"first_name":"template_test_bot","username":"template_test2023_bot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false}}''
+2023-08-24 13:24:41,449 INFO Starting your bot with username: [@template_test2023_bot]
+2023-08-24 13:24:41,449 INFO Started polling.
+2023-08-24 13:24:41,450 DEBUG Received task
+2023-08-24 13:24:41,450 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': -1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:24:41,452 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-24 13:24:41,784 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=-1&timeout=20 HTTP/1.1" 200 368
+2023-08-24 13:24:41,785 DEBUG The server returned: 'b'{"ok":true,"result":[{"update_id":727919355,\n"message":{"message_id":9470,"from":{"id":1029045407,"is_bot":false,"first_name":"Pr@ctic","username":"Practic_old","language_code":"en"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1692858281,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}''
+2023-08-24 13:24:41,786 DEBUG Skipped all pending messages
+2023-08-24 13:24:41,786 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:24:41,869 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 368
+2023-08-24 13:24:41,871 DEBUG The server returned: 'b'{"ok":true,"result":[{"update_id":727919355,\n"message":{"message_id":9470,"from":{"id":1029045407,"is_bot":false,"first_name":"Pr@ctic","username":"Practic_old","language_code":"en"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1692858281,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}''
+2023-08-24 13:24:41,872 DEBUG Received 1 new updates
+2023-08-24 13:24:41,873 DEBUG Task complete
+2023-08-24 13:24:41,873 DEBUG Received task
+2023-08-24 13:24:41,875 DEBUG Received task
+2023-08-24 13:24:41,876 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919356, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:24:41,877 DEBUG Request: method=post url=https://api.telegram.org/bot6192798371:{TOKEN}/sendMessage params={'chat_id': '1029045407', 'text': '\n    Бот использоуется как шаблон\n    ', 'reply_markup': '{"inline_keyboard": [[{"text": "\\u041f\\u043e\\u0433\\u043d\\u0430\\u043b\\u0438 \\u0434\\u0430\\u043b\\u044c\\u0448\\u0435?", "callback_data": "next"}]]}', 'parse_mode': 'HTML'} files=None
+2023-08-24 13:24:41,883 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-24 13:24:42,303 DEBUG https://api.telegram.org:443 "POST /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/sendMessage?chat_id=1029045407&text=%0A++++%D0%91%D0%BE%D1%82+%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D1%83%D0%B5%D1%82%D1%81%D1%8F+%D0%BA%D0%B0%D0%BA+%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%0A++++&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%5Cu041f%5Cu043e%5Cu0433%5Cu043d%5Cu0430%5Cu043b%5Cu0438+%5Cu0434%5Cu0430%5Cu043b%5Cu044c%5Cu0448%5Cu0435%3F%22%2C+%22callback_data%22%3A+%22next%22%7D%5D%5D%7D&parse_mode=HTML HTTP/1.1" 200 572
+2023-08-24 13:24:42,303 DEBUG The server returned: 'b'{"ok":true,"result":{"message_id":9471,"from":{"id":6192798371,"is_bot":true,"first_name":"template_test_bot","username":"template_test2023_bot"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1692858282,"text":"\\u0411\\u043e\\u0442 \\u0438\\u0441\\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0443\\u0435\\u0442\\u0441\\u044f \\u043a\\u0430\\u043a \\u0448\\u0430\\u0431\\u043b\\u043e\\u043d","reply_markup":{"inline_keyboard":[[{"text":"\\u041f\\u043e\\u0433\\u043d\\u0430\\u043b\\u0438 \\u0434\\u0430\\u043b\\u044c\\u0448\\u0435?","callback_data":"next"}]]}}}''
+2023-08-24 13:24:42,303 DEBUG Task complete
+2023-08-24 13:25:01,966 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=727919356&timeout=20 HTTP/1.1" 200 23
+2023-08-24 13:25:01,967 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-24 13:25:01,968 DEBUG Received 0 new updates
+2023-08-24 13:25:01,968 DEBUG Task complete
+2023-08-24 13:25:01,968 DEBUG Received task
+2023-08-24 13:25:01,969 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919356, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:25:04,647 INFO KeyboardInterrupt received.
+2023-08-24 13:25:04,648 INFO Stopped polling.
+2023-08-24 13:25:04,649 ERROR Infinity polling: polling exited
+2023-08-24 13:25:04,649 ERROR Break infinity polling
+2023-08-24 13:31:01,230 DEBUG Request: method=post url=https://api.telegram.org/bot6192798371:{TOKEN}/setMyCommands params={'commands': '[{"command": "start", "description": "\\u0417\\u0430\\u043f\\u0443\\u0441\\u043a \\u0431\\u043e\\u0442\\u0430"}]'} files=None
+2023-08-24 13:31:01,233 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-24 13:31:01,693 DEBUG https://api.telegram.org:443 "POST /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/setMyCommands?commands=%5B%7B%22command%22%3A+%22start%22%2C+%22description%22%3A+%22%5Cu0417%5Cu0430%5Cu043f%5Cu0443%5Cu0441%5Cu043a+%5Cu0431%5Cu043e%5Cu0442%5Cu0430%22%7D%5D HTTP/1.1" 200 25
+2023-08-24 13:31:01,693 DEBUG The server returned: 'b'{"ok":true,"result":true}''
+2023-08-24 13:31:01,694 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': -1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:31:09,445 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=-1&timeout=20 HTTP/1.1" 200 368
+2023-08-24 13:31:09,446 DEBUG The server returned: 'b'{"ok":true,"result":[{"update_id":727919356,\n"message":{"message_id":9472,"from":{"id":1029045407,"is_bot":false,"first_name":"Pr@ctic","username":"Practic_old","language_code":"en"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1692858669,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}''
+2023-08-24 13:31:09,446 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getMe params=None files=None
+2023-08-24 13:31:09,525 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getMe HTTP/1.1" 200 211
+2023-08-24 13:31:09,525 DEBUG The server returned: 'b'{"ok":true,"result":{"id":6192798371,"is_bot":true,"first_name":"template_test_bot","username":"template_test2023_bot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false}}''
+2023-08-24 13:31:09,526 INFO Starting your bot with username: [@template_test2023_bot]
+2023-08-24 13:31:09,527 INFO Started polling.
+2023-08-24 13:31:09,527 DEBUG Received task
+2023-08-24 13:31:09,528 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': -1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:31:09,529 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-24 13:31:09,868 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=-1&timeout=20 HTTP/1.1" 200 368
+2023-08-24 13:31:09,869 DEBUG The server returned: 'b'{"ok":true,"result":[{"update_id":727919356,\n"message":{"message_id":9472,"from":{"id":1029045407,"is_bot":false,"first_name":"Pr@ctic","username":"Practic_old","language_code":"en"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1692858669,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}''
+2023-08-24 13:31:09,869 DEBUG Skipped all pending messages
+2023-08-24 13:31:09,870 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:31:09,957 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 368
+2023-08-24 13:31:09,958 DEBUG The server returned: 'b'{"ok":true,"result":[{"update_id":727919356,\n"message":{"message_id":9472,"from":{"id":1029045407,"is_bot":false,"first_name":"Pr@ctic","username":"Practic_old","language_code":"en"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1692858669,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}''
+2023-08-24 13:31:09,958 DEBUG Received 1 new updates
+2023-08-24 13:31:09,958 DEBUG Task complete
+2023-08-24 13:31:09,958 DEBUG Received task
+2023-08-24 13:31:09,959 DEBUG Request: method=post url=https://api.telegram.org/bot6192798371:{TOKEN}/sendMessage params={'chat_id': '1029045407', 'text': '\n    Бот использоуется как шаблон\n    ', 'reply_markup': '{"inline_keyboard": [[{"text": "\\u041f\\u043e\\u0433\\u043d\\u0430\\u043b\\u0438 \\u0434\\u0430\\u043b\\u044c\\u0448\\u0435?", "callback_data": "next"}]]}', 'parse_mode': 'HTML'} files=None
+2023-08-24 13:31:09,961 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-24 13:31:09,961 DEBUG Received task
+2023-08-24 13:31:09,961 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919357, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:31:10,323 DEBUG https://api.telegram.org:443 "POST /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/sendMessage?chat_id=1029045407&text=%0A++++%D0%91%D0%BE%D1%82+%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D1%83%D0%B5%D1%82%D1%81%D1%8F+%D0%BA%D0%B0%D0%BA+%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%0A++++&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%5Cu041f%5Cu043e%5Cu0433%5Cu043d%5Cu0430%5Cu043b%5Cu0438+%5Cu0434%5Cu0430%5Cu043b%5Cu044c%5Cu0448%5Cu0435%3F%22%2C+%22callback_data%22%3A+%22next%22%7D%5D%5D%7D&parse_mode=HTML HTTP/1.1" 200 572
+2023-08-24 13:31:10,324 DEBUG The server returned: 'b'{"ok":true,"result":{"message_id":9473,"from":{"id":6192798371,"is_bot":true,"first_name":"template_test_bot","username":"template_test2023_bot"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1692858670,"text":"\\u0411\\u043e\\u0442 \\u0438\\u0441\\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0443\\u0435\\u0442\\u0441\\u044f \\u043a\\u0430\\u043a \\u0448\\u0430\\u0431\\u043b\\u043e\\u043d","reply_markup":{"inline_keyboard":[[{"text":"\\u041f\\u043e\\u0433\\u043d\\u0430\\u043b\\u0438 \\u0434\\u0430\\u043b\\u044c\\u0448\\u0435?","callback_data":"next"}]]}}}''
+2023-08-24 13:31:10,324 DEBUG Task complete
+2023-08-24 13:31:30,045 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=727919357&timeout=20 HTTP/1.1" 200 23
+2023-08-24 13:31:30,046 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-24 13:31:30,047 DEBUG Received 0 new updates
+2023-08-24 13:31:30,047 DEBUG Task complete
+2023-08-24 13:31:30,048 DEBUG Received task
+2023-08-24 13:31:30,048 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919357, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:31:50,127 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=727919357&timeout=20 HTTP/1.1" 200 23
+2023-08-24 13:31:50,127 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-24 13:31:50,127 DEBUG Received 0 new updates
+2023-08-24 13:31:50,128 DEBUG Task complete
+2023-08-24 13:31:50,128 DEBUG Received task
+2023-08-24 13:31:50,128 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919357, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:32:10,213 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=727919357&timeout=20 HTTP/1.1" 200 23
+2023-08-24 13:32:10,214 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-24 13:32:10,215 DEBUG Received 0 new updates
+2023-08-24 13:32:10,215 DEBUG Task complete
+2023-08-24 13:32:10,216 DEBUG Received task
+2023-08-24 13:32:10,216 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919357, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:32:30,309 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=727919357&timeout=20 HTTP/1.1" 200 23
+2023-08-24 13:32:30,310 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-24 13:32:30,311 DEBUG Received 0 new updates
+2023-08-24 13:32:30,311 DEBUG Task complete
+2023-08-24 13:32:30,312 DEBUG Received task
+2023-08-24 13:32:30,313 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919357, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:32:50,396 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=727919357&timeout=20 HTTP/1.1" 200 23
+2023-08-24 13:32:50,397 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-24 13:32:50,397 DEBUG Received 0 new updates
+2023-08-24 13:32:50,397 DEBUG Task complete
+2023-08-24 13:32:50,398 DEBUG Received task
+2023-08-24 13:32:50,398 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919357, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:33:10,485 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=727919357&timeout=20 HTTP/1.1" 200 23
+2023-08-24 13:33:10,486 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-24 13:33:10,486 DEBUG Received 0 new updates
+2023-08-24 13:33:10,487 DEBUG Task complete
+2023-08-24 13:33:10,487 DEBUG Received task
+2023-08-24 13:33:10,488 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919357, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:33:30,573 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=727919357&timeout=20 HTTP/1.1" 200 23
+2023-08-24 13:33:30,574 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-24 13:33:30,575 DEBUG Received 0 new updates
+2023-08-24 13:33:30,575 DEBUG Task complete
+2023-08-24 13:33:30,576 DEBUG Received task
+2023-08-24 13:33:30,577 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919357, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-24 13:33:41,144 INFO KeyboardInterrupt received.
+2023-08-24 13:33:41,145 INFO Stopped polling.
+2023-08-24 13:33:41,146 ERROR Infinity polling: polling exited
+2023-08-24 13:33:41,146 ERROR Break infinity polling
+2023-08-28 15:03:29,660 DEBUG Request: method=post url=https://api.telegram.org/bot6192798371:{TOKEN}/setMyCommands params={'commands': '[{"command": "start", "description": "\\u0417\\u0430\\u043f\\u0443\\u0441\\u043a \\u0431\\u043e\\u0442\\u0430"}]'} files=None
+2023-08-28 15:03:29,727 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-28 15:03:30,316 DEBUG https://api.telegram.org:443 "POST /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/setMyCommands?commands=%5B%7B%22command%22%3A+%22start%22%2C+%22description%22%3A+%22%5Cu0417%5Cu0430%5Cu043f%5Cu0443%5Cu0441%5Cu043a+%5Cu0431%5Cu043e%5Cu0442%5Cu0430%22%7D%5D HTTP/1.1" 200 25
+2023-08-28 15:03:30,317 DEBUG The server returned: 'b'{"ok":true,"result":true}''
+2023-08-28 15:03:30,318 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': -1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:03:50,416 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=-1&timeout=20 HTTP/1.1" 200 23
+2023-08-28 15:03:50,417 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-28 15:03:50,418 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getMe params=None files=None
+2023-08-28 15:03:50,508 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getMe HTTP/1.1" 200 211
+2023-08-28 15:03:50,508 DEBUG The server returned: 'b'{"ok":true,"result":{"id":6192798371,"is_bot":true,"first_name":"template_test_bot","username":"template_test2023_bot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false}}''
+2023-08-28 15:03:50,508 INFO Starting your bot with username: [@template_test2023_bot]
+2023-08-28 15:03:50,509 INFO Started polling.
+2023-08-28 15:03:50,509 DEBUG Received task
+2023-08-28 15:03:50,510 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': -1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:03:50,511 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-28 15:04:10,976 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=-1&timeout=20 HTTP/1.1" 200 23
+2023-08-28 15:04:10,976 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-28 15:04:10,977 DEBUG Skipped all pending messages
+2023-08-28 15:04:10,977 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:04:31,064 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 23
+2023-08-28 15:04:31,065 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-28 15:04:31,065 DEBUG Received 0 new updates
+2023-08-28 15:04:31,065 DEBUG Task complete
+2023-08-28 15:04:31,065 DEBUG Received task
+2023-08-28 15:04:31,065 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:04:51,157 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 23
+2023-08-28 15:04:51,158 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-28 15:04:51,159 DEBUG Received 0 new updates
+2023-08-28 15:04:51,159 DEBUG Task complete
+2023-08-28 15:04:51,161 DEBUG Received task
+2023-08-28 15:04:51,161 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:05:11,253 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 23
+2023-08-28 15:05:11,254 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-28 15:05:11,256 DEBUG Received 0 new updates
+2023-08-28 15:05:11,256 DEBUG Task complete
+2023-08-28 15:05:11,258 DEBUG Received task
+2023-08-28 15:05:11,259 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:05:31,349 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 23
+2023-08-28 15:05:31,349 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-28 15:05:31,349 DEBUG Received 0 new updates
+2023-08-28 15:05:31,349 DEBUG Task complete
+2023-08-28 15:05:31,350 DEBUG Received task
+2023-08-28 15:05:31,350 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:05:43,981 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 368
+2023-08-28 15:05:43,981 DEBUG The server returned: 'b'{"ok":true,"result":[{"update_id":727919461,\n"message":{"message_id":9621,"from":{"id":1029045407,"is_bot":false,"first_name":"Pr@ctic","username":"Practic_old","language_code":"en"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1693209943,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}''
+2023-08-28 15:05:43,982 DEBUG Received 1 new updates
+2023-08-28 15:05:43,983 DEBUG Task complete
+2023-08-28 15:05:43,983 DEBUG Received task
+2023-08-28 15:05:43,985 DEBUG Received task
+2023-08-28 15:05:43,985 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919462, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:05:43,987 DEBUG Request: method=post url=https://api.telegram.org/bot6192798371:{TOKEN}/sendMessage params={'chat_id': '1029045407', 'text': '\n    Бот использоуется как шаблон\n    ', 'reply_markup': '{"inline_keyboard": [[{"text": "\\u041f\\u043e\\u0433\\u043d\\u0430\\u043b\\u0438 \\u0434\\u0430\\u043b\\u044c\\u0448\\u0435?", "callback_data": "next"}]]}', 'parse_mode': 'HTML'} files=None
+2023-08-28 15:05:43,993 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-28 15:05:44,582 DEBUG https://api.telegram.org:443 "POST /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/sendMessage?chat_id=1029045407&text=%0A++++%D0%91%D0%BE%D1%82+%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D1%83%D0%B5%D1%82%D1%81%D1%8F+%D0%BA%D0%B0%D0%BA+%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%0A++++&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%5Cu041f%5Cu043e%5Cu0433%5Cu043d%5Cu0430%5Cu043b%5Cu0438+%5Cu0434%5Cu0430%5Cu043b%5Cu044c%5Cu0448%5Cu0435%3F%22%2C+%22callback_data%22%3A+%22next%22%7D%5D%5D%7D&parse_mode=HTML HTTP/1.1" 200 572
+2023-08-28 15:05:44,583 DEBUG The server returned: 'b'{"ok":true,"result":{"message_id":9622,"from":{"id":6192798371,"is_bot":true,"first_name":"template_test_bot","username":"template_test2023_bot"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1693209944,"text":"\\u0411\\u043e\\u0442 \\u0438\\u0441\\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0443\\u0435\\u0442\\u0441\\u044f \\u043a\\u0430\\u043a \\u0448\\u0430\\u0431\\u043b\\u043e\\u043d","reply_markup":{"inline_keyboard":[[{"text":"\\u041f\\u043e\\u0433\\u043d\\u0430\\u043b\\u0438 \\u0434\\u0430\\u043b\\u044c\\u0448\\u0435?","callback_data":"next"}]]}}}''
+2023-08-28 15:05:44,584 DEBUG Task complete
+2023-08-28 15:06:04,077 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=727919462&timeout=20 HTTP/1.1" 200 23
+2023-08-28 15:06:04,078 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-28 15:06:04,078 DEBUG Received 0 new updates
+2023-08-28 15:06:04,078 DEBUG Task complete
+2023-08-28 15:06:04,078 DEBUG Received task
+2023-08-28 15:06:04,078 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919462, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:06:09,883 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=727919462&timeout=20 HTTP/1.1" 200 2074
+2023-08-28 15:06:09,883 DEBUG The server returned: 'b'{"ok":true,"result":[{"update_id":727919462,\n"message":{"message_id":9623,"from":{"id":1029045407,"is_bot":false,"first_name":"Pr@ctic","username":"Practic_old","language_code":"en"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1693209969,"media_group_id":"13545679758196754","photo":[{"file_id":"AgACAgIAAxkBAAIll2TsVXFFN36o0uoyLF3dH5y6s2stAAICyzEbDUJpS4be-NXx9JL9AQADAgADcwADMAQ","file_unique_id":"AQADAssxGw1CaUt4","file_size":1122,"width":51,"height":90},{"file_id":"AgACAgIAAxkBAAIll2TsVXFFN36o0uoyLF3dH5y6s2stAAICyzEbDUJpS4be-NXx9JL9AQADAgADbQADMAQ","file_unique_id":"AQADAssxGw1CaUty","file_size":22012,"width":180,"height":320},{"file_id":"AgACAgIAAxkBAAIll2TsVXFFN36o0uoyLF3dH5y6s2stAAICyzEbDUJpS4be-NXx9JL9AQADAgADeAADMAQ","file_unique_id":"AQADAssxGw1CaUt9","file_size":106325,"width":450,"height":800},{"file_id":"AgACAgIAAxkBAAIll2TsVXFFN36o0uoyLF3dH5y6s2stAAICyzEbDUJpS4be-NXx9JL9AQADAgADeQADMAQ","file_unique_id":"AQADAssxGw1CaUt-","file_size":200216,"width":720,"height":1280}]}},{"update_id":727919463,\n"message":{"message_id":9624,"from":{"id":1029045407,"is_bot":false,"first_name":"Pr@ctic","username":"Practic_old","language_code":"en"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1693209969,"media_group_id":"13545679758196754","photo":[{"file_id":"AgACAgIAAxkBAAIlmGTsVXH9ynLIypEhmtofNeWhqHzBAAIDyzEbDUJpS8m31eYjzjAvAQADAgADcwADMAQ","file_unique_id":"AQADA8sxGw1CaUt4","file_size":1004,"width":67,"height":90},{"file_id":"AgACAgIAAxkBAAIlmGTsVXH9ynLIypEhmtofNeWhqHzBAAIDyzEbDUJpS8m31eYjzjAvAQADAgADbQADMAQ","file_unique_id":"AQADA8sxGw1CaUty","file_size":10368,"width":240,"height":320},{"file_id":"AgACAgIAAxkBAAIlmGTsVXH9ynLIypEhmtofNeWhqHzBAAIDyzEbDUJpS8m31eYjzjAvAQADAgADeAADMAQ","file_unique_id":"AQADA8sxGw1CaUt9","file_size":43838,"width":600,"height":800},{"file_id":"AgACAgIAAxkBAAIlmGTsVXH9ynLIypEhmtofNeWhqHzBAAIDyzEbDUJpS8m31eYjzjAvAQADAgADeQADMAQ","file_unique_id":"AQADA8sxGw1CaUt-","file_size":51584,"width":960,"height":1280}]}}]}''
+2023-08-28 15:06:09,884 DEBUG Received 2 new updates
+2023-08-28 15:06:09,884 DEBUG Task complete
+2023-08-28 15:06:09,884 DEBUG Received task
+2023-08-28 15:06:09,884 DEBUG Received task
+2023-08-28 15:06:09,884 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getFile params={'file_id': 'AgACAgIAAxkBAAIll2TsVXFFN36o0uoyLF3dH5y6s2stAAICyzEbDUJpS4be-NXx9JL9AQADAgADeQADMAQ'} files=None
+2023-08-28 15:06:09,885 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getFile params={'file_id': 'AgACAgIAAxkBAAIlmGTsVXH9ynLIypEhmtofNeWhqHzBAAIDyzEbDUJpS8m31eYjzjAvAQADAgADeQADMAQ'} files=None
+2023-08-28 15:06:09,887 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-28 15:06:09,888 DEBUG Received task
+2023-08-28 15:06:09,888 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919464, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:06:09,993 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getFile?file_id=AgACAgIAAxkBAAIlmGTsVXH9ynLIypEhmtofNeWhqHzBAAIDyzEbDUJpS8m31eYjzjAvAQADAgADeQADMAQ HTTP/1.1" 200 206
+2023-08-28 15:06:09,994 DEBUG The server returned: 'b'{"ok":true,"result":{"file_id":"AgACAgIAAxkBAAIlmGTsVXH9ynLIypEhmtofNeWhqHzBAAIDyzEbDUJpS8m31eYjzjAvAQADAgADeQADMAQ","file_unique_id":"AQADA8sxGw1CaUt-","file_size":51584,"file_path":"photos/file_186.jpg"}}''
+2023-08-28 15:06:10,166 DEBUG https://api.telegram.org:443 "GET /file/bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/photos/file_186.jpg HTTP/1.1" 200 51584
+2023-08-28 15:06:10,251 DEBUG AttributeError occurred, args=("'TeleBot' object has no attribute 'save_photo'",)
+Traceback (most recent call last):
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/util.py", line 91, in run
+    task(*args, **kwargs)
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/home/practic/code/git/bot_template/bot.py", line 61, in get_photo
+    msg = bot.save_photo()
+AttributeError: 'TeleBot' object has no attribute 'save_photo'
+
+2023-08-28 15:06:10,251 ERROR Infinity polling exception: 'TeleBot' object has no attribute 'save_photo'
+2023-08-28 15:06:10,251 ERROR Exception traceback:
+Traceback (most recent call last):
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 955, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/util.py", line 91, in run
+    task(*args, **kwargs)
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/home/practic/code/git/bot_template/bot.py", line 61, in get_photo
+    msg = bot.save_photo()
+AttributeError: 'TeleBot' object has no attribute 'save_photo'
+
+2023-08-28 15:06:10,330 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getFile?file_id=AgACAgIAAxkBAAIll2TsVXFFN36o0uoyLF3dH5y6s2stAAICyzEbDUJpS4be-NXx9JL9AQADAgADeQADMAQ HTTP/1.1" 200 207
+2023-08-28 15:06:10,330 DEBUG The server returned: 'b'{"ok":true,"result":{"file_id":"AgACAgIAAxkBAAIll2TsVXFFN36o0uoyLF3dH5y6s2stAAICyzEbDUJpS4be-NXx9JL9AQADAgADeQADMAQ","file_unique_id":"AQADAssxGw1CaUt-","file_size":200216,"file_path":"photos/file_187.jpg"}}''
+2023-08-28 15:06:10,487 DEBUG https://api.telegram.org:443 "GET /file/bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/photos/file_187.jpg HTTP/1.1" 200 200216
+2023-08-28 15:06:10,647 DEBUG AttributeError occurred, args=("'TeleBot' object has no attribute 'save_photo'",)
+Traceback (most recent call last):
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/util.py", line 91, in run
+    task(*args, **kwargs)
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/home/practic/code/git/bot_template/bot.py", line 61, in get_photo
+    msg = bot.save_photo()
+AttributeError: 'TeleBot' object has no attribute 'save_photo'
+
+2023-08-28 15:06:13,254 INFO Starting your bot with username: [@template_test2023_bot]
+2023-08-28 15:06:13,255 INFO Started polling.
+2023-08-28 15:06:13,256 DEBUG Received task
+2023-08-28 15:06:13,256 ERROR Infinity polling exception: 'TeleBot' object has no attribute 'save_photo'
+2023-08-28 15:06:13,256 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919464, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:06:13,257 ERROR Exception traceback:
+Traceback (most recent call last):
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 955, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/util.py", line 148, in raise_exceptions
+    raise self.exception_info
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/util.py", line 91, in run
+    task(*args, **kwargs)
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 6428, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/home/practic/code/git/bot_template/bot.py", line 61, in get_photo
+    msg = bot.save_photo()
+AttributeError: 'TeleBot' object has no attribute 'save_photo'
+
+2023-08-28 15:06:13,259 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-28 15:06:13,612 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=727919464&timeout=20 HTTP/1.1" 409 143
+2023-08-28 15:06:13,613 DEBUG The server returned: 'b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}''
+2023-08-28 15:06:13,630 DEBUG ApiTelegramException occurred, args=('A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running',)
+Traceback (most recent call last):
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/util.py", line 91, in run
+    task(*args, **kwargs)
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2023-08-28 15:06:16,260 INFO Starting your bot with username: [@template_test2023_bot]
+2023-08-28 15:06:16,261 INFO Started polling.
+2023-08-28 15:06:16,261 DEBUG Received task
+2023-08-28 15:06:16,262 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919464, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:06:16,264 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-28 15:06:16,634 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=727919464&timeout=20 HTTP/1.1" 409 143
+2023-08-28 15:06:16,635 DEBUG The server returned: 'b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}''
+2023-08-28 15:06:16,636 DEBUG ApiTelegramException occurred, args=('A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running',)
+Traceback (most recent call last):
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/util.py", line 91, in run
+    task(*args, **kwargs)
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 649, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/__init__.py", line 623, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/apihelper.py", line 321, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/apihelper.py", line 162, in _make_request
+    json_result = _check_result(method_name, result)
+  File "/home/practic/code/git/bot_template/bot/lib/python3.9/site-packages/telebot/apihelper.py", line 189, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2023-08-28 15:06:23,200 INFO KeyboardInterrupt received.
+2023-08-28 15:06:23,200 INFO Stopped polling.
+2023-08-28 15:06:23,201 ERROR Infinity polling: polling exited
+2023-08-28 15:06:23,201 ERROR Break infinity polling
+2023-08-28 15:14:05,570 DEBUG Request: method=post url=https://api.telegram.org/bot6192798371:{TOKEN}/setMyCommands params={'commands': '[{"command": "start", "description": "\\u0417\\u0430\\u043f\\u0443\\u0441\\u043a \\u0431\\u043e\\u0442\\u0430"}]'} files=None
+2023-08-28 15:14:05,572 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-28 15:14:06,032 DEBUG https://api.telegram.org:443 "POST /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/setMyCommands?commands=%5B%7B%22command%22%3A+%22start%22%2C+%22description%22%3A+%22%5Cu0417%5Cu0430%5Cu043f%5Cu0443%5Cu0441%5Cu043a+%5Cu0431%5Cu043e%5Cu0442%5Cu0430%22%7D%5D HTTP/1.1" 200 25
+2023-08-28 15:14:06,035 DEBUG The server returned: 'b'{"ok":true,"result":true}''
+2023-08-28 15:14:06,037 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': -1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:14:26,124 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=-1&timeout=20 HTTP/1.1" 200 23
+2023-08-28 15:14:26,124 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-28 15:14:26,124 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getMe params=None files=None
+2023-08-28 15:14:26,207 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getMe HTTP/1.1" 200 211
+2023-08-28 15:14:26,207 DEBUG The server returned: 'b'{"ok":true,"result":{"id":6192798371,"is_bot":true,"first_name":"template_test_bot","username":"template_test2023_bot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false}}''
+2023-08-28 15:14:26,207 INFO Starting your bot with username: [@template_test2023_bot]
+2023-08-28 15:14:26,208 INFO Started polling.
+2023-08-28 15:14:26,208 DEBUG Received task
+2023-08-28 15:14:26,208 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': -1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:14:26,209 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-28 15:14:46,660 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=-1&timeout=20 HTTP/1.1" 200 23
+2023-08-28 15:14:46,660 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-28 15:14:46,661 DEBUG Skipped all pending messages
+2023-08-28 15:14:46,661 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 1, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:14:54,264 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 2079
+2023-08-28 15:14:54,264 DEBUG The server returned: 'b'{"ok":true,"result":[{"update_id":727919464,\n"message":{"message_id":9625,"from":{"id":1029045407,"is_bot":false,"first_name":"Pr@ctic","username":"Practic_old","language_code":"en"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1693210494,"media_group_id":"13545683953366786","photo":[{"file_id":"AgACAgIAAxkBAAIlmWTsV34AARJbF_e9OGht4T9JUjP6mwACAssxGw1CaUuG3vjV8fSS_QEAAwIAA3MAAzAE","file_unique_id":"AQADAssxGw1CaUt4","file_size":1122,"width":51,"height":90},{"file_id":"AgACAgIAAxkBAAIlmWTsV34AARJbF_e9OGht4T9JUjP6mwACAssxGw1CaUuG3vjV8fSS_QEAAwIAA20AAzAE","file_unique_id":"AQADAssxGw1CaUty","file_size":22012,"width":180,"height":320},{"file_id":"AgACAgIAAxkBAAIlmWTsV34AARJbF_e9OGht4T9JUjP6mwACAssxGw1CaUuG3vjV8fSS_QEAAwIAA3gAAzAE","file_unique_id":"AQADAssxGw1CaUt9","file_size":106325,"width":450,"height":800},{"file_id":"AgACAgIAAxkBAAIlmWTsV34AARJbF_e9OGht4T9JUjP6mwACAssxGw1CaUuG3vjV8fSS_QEAAwIAA3kAAzAE","file_unique_id":"AQADAssxGw1CaUt-","file_size":200216,"width":720,"height":1280}]}},{"update_id":727919465,\n"message":{"message_id":9626,"from":{"id":1029045407,"is_bot":false,"first_name":"Pr@ctic","username":"Practic_old","language_code":"en"},"chat":{"id":1029045407,"first_name":"Pr@ctic","username":"Practic_old","type":"private"},"date":1693210494,"media_group_id":"13545683953366786","photo":[{"file_id":"AgACAgIAAxkBAAIlmmTsV37EgW4ceoPYq15RBjXpuA8YAAIJyzEbDUJpS-1EPURzq8FFAQADAgADcwADMAQ","file_unique_id":"AQADCcsxGw1CaUt4","file_size":1595,"width":81,"height":90},{"file_id":"AgACAgIAAxkBAAIlmmTsV37EgW4ceoPYq15RBjXpuA8YAAIJyzEbDUJpS-1EPURzq8FFAQADAgADbQADMAQ","file_unique_id":"AQADCcsxGw1CaUty","file_size":36562,"width":287,"height":320},{"file_id":"AgACAgIAAxkBAAIlmmTsV37EgW4ceoPYq15RBjXpuA8YAAIJyzEbDUJpS-1EPURzq8FFAQADAgADeQADMAQ","file_unique_id":"AQADCcsxGw1CaUt-","file_size":177783,"width":750,"height":837},{"file_id":"AgACAgIAAxkBAAIlmmTsV37EgW4ceoPYq15RBjXpuA8YAAIJyzEbDUJpS-1EPURzq8FFAQADAgADeAADMAQ","file_unique_id":"AQADCcsxGw1CaUt9","file_size":187722,"width":717,"height":800}]}}]}''
+2023-08-28 15:14:54,264 DEBUG Received 2 new updates
+2023-08-28 15:14:54,265 DEBUG Task complete
+2023-08-28 15:14:54,265 DEBUG Received task
+2023-08-28 15:14:54,265 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getFile params={'file_id': 'AgACAgIAAxkBAAIlmWTsV34AARJbF_e9OGht4T9JUjP6mwACAssxGw1CaUuG3vjV8fSS_QEAAwIAA3kAAzAE'} files=None
+2023-08-28 15:14:54,267 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-28 15:14:54,265 DEBUG Received task
+2023-08-28 15:14:54,267 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getFile params={'file_id': 'AgACAgIAAxkBAAIlmmTsV37EgW4ceoPYq15RBjXpuA8YAAIJyzEbDUJpS-1EPURzq8FFAQADAgADeAADMAQ'} files=None
+2023-08-28 15:14:54,269 DEBUG Starting new HTTPS connection (1): api.telegram.org:443
+2023-08-28 15:14:54,267 DEBUG Received task
+2023-08-28 15:14:54,270 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919466, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:14:54,630 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getFile?file_id=AgACAgIAAxkBAAIlmWTsV34AARJbF_e9OGht4T9JUjP6mwACAssxGw1CaUuG3vjV8fSS_QEAAwIAA3kAAzAE HTTP/1.1" 200 208
+2023-08-28 15:14:54,631 DEBUG The server returned: 'b'{"ok":true,"result":{"file_id":"AgACAgIAAxkBAAIlmWTsV34AARJbF_e9OGht4T9JUjP6mwACAssxGw1CaUuG3vjV8fSS_QEAAwIAA3kAAzAE","file_unique_id":"AQADAssxGw1CaUt-","file_size":200216,"file_path":"photos/file_187.jpg"}}''
+2023-08-28 15:14:54,672 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getFile?file_id=AgACAgIAAxkBAAIlmmTsV37EgW4ceoPYq15RBjXpuA8YAAIJyzEbDUJpS-1EPURzq8FFAQADAgADeAADMAQ HTTP/1.1" 200 207
+2023-08-28 15:14:54,673 DEBUG The server returned: 'b'{"ok":true,"result":{"file_id":"AgACAgIAAxkBAAIlmmTsV37EgW4ceoPYq15RBjXpuA8YAAIJyzEbDUJpS-1EPURzq8FFAQADAgADeAADMAQ","file_unique_id":"AQADCcsxGw1CaUt9","file_size":187722,"file_path":"photos/file_188.jpg"}}''
+2023-08-28 15:14:54,794 DEBUG https://api.telegram.org:443 "GET /file/bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/photos/file_187.jpg HTTP/1.1" 200 200216
+2023-08-28 15:14:54,839 DEBUG https://api.telegram.org:443 "GET /file/bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/photos/file_188.jpg HTTP/1.1" 200 187722
+2023-08-28 15:14:54,958 DEBUG Task complete
+2023-08-28 15:14:55,001 DEBUG Task complete
+2023-08-28 15:15:14,369 DEBUG https://api.telegram.org:443 "GET /bot6192798371:AAGaLj8lllkkx8k39hi85kgGpVQnUZKHZno/getUpdates?offset=727919466&timeout=20 HTTP/1.1" 200 23
+2023-08-28 15:15:14,370 DEBUG The server returned: 'b'{"ok":true,"result":[]}''
+2023-08-28 15:15:14,371 DEBUG Received 0 new updates
+2023-08-28 15:15:14,372 DEBUG Task complete
+2023-08-28 15:15:14,373 DEBUG Received task
+2023-08-28 15:15:14,375 DEBUG Request: method=get url=https://api.telegram.org/bot6192798371:{TOKEN}/getUpdates params={'offset': 727919466, 'timeout': 20, 'long_polling_timeout': 20} files=None
+2023-08-28 15:15:26,008 INFO KeyboardInterrupt received.
+2023-08-28 15:15:26,008 INFO Stopped polling.
+2023-08-28 15:15:26,008 ERROR Infinity polling: polling exited
+2023-08-28 15:15:26,009 ERROR Break infinity polling
