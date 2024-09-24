@@ -2,7 +2,8 @@ import datetime
 import re
 import pytz
 from bot import db_users
-
+import sqlite3
+import sqliteormmagic as som
 # функция валидации возраста
 def check_age(age_text):
     """
@@ -109,7 +110,8 @@ def cr_table_users(message):
             ("phone", 'TEXT'),  
             ("type_consult", 'TEXT'),         
             ("time_connect", 'TEXT'),             
-
+            ("voice", 'BLOB'),        
+            ("sticker", 'BLOB'),  
             ])
             
     db_users.ins_unique_row('users', [
@@ -124,5 +126,17 @@ def cr_table_users(message):
             ("phone", '0'),  
             ("type_consult", '0'),         
             ("time_connect", '0'),    
-           
+            ("voice", ''),  
             ])    
+    
+
+def get_value(value_name :str, user_id: int):
+    connection = sqlite3.connect('users.db')
+    query = f"""
+    SELECT {value_name}       
+    FROM users 
+    WHERE from_user_id = ?
+    """  
+    all_records = som.execute_query_select(connection=connection, query=query, params=[user_id])
+    connection.close()
+    return all_records[0][0]       
