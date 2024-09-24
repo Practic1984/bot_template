@@ -157,7 +157,7 @@ class SQLiteDB():
         return list_of_tuple
     
     
-    def upd_element_in_column(self, table_name:str, upd_par_name: str, key_par_name: str, upd_column_name: str, key_column_name:str):
+    def upd_element_in_column(self, table_name:str, set_upd_par_name: str, set_key_par_name: str, upd_column_name: str, key_column_name:str):
         """
         database update function
         by cell value with column name
@@ -170,11 +170,11 @@ class SQLiteDB():
         connection = create_connection(self.DBNAME)
         query = f"""
             UPDATE {table_name}
-            SET {upd_par_name} = ?
+            SET {set_upd_par_name} = ?
             WHERE {upd_column_name} = ?
             """
         print(query)
-        execute_query(connection, query=query, params=[key_par_name, key_column_name])
+        execute_query(connection, query=query, params=[set_key_par_name, key_column_name])
         connection.close()
 
 
@@ -215,5 +215,86 @@ class SQLiteDB():
         execute_query(connection=connection, query=query, params=list_value)
 
         connection.close()
+
+    def insert_row(self, table_name:str, list_query_params:list):
+            """
+            database insertion function
+            unique value with column name
+            if there was a UNIQUE flag when creating
+            a column in a database table
+            table_name: str table name
+            list_query_params: list list of tuples of one table row
+            Parameter List Loading Example
+            list_query_params = [
+            ('from_user_id', '123'),
+            ('from_user_username', 'vasya'),
+            ('from_user_firstname', 'petrov'),
+            ('regtime', '1234568')
+            ]
+            """
+            connection = create_connection(self.DBNAME)
+
+            text_params=''
+            for i in list_query_params:
+                text_params += f"{i[0]},\n"
+            text_params=text_params[:-2]
+
+            list_value = []
+            text_questions = ""
+            for i in list_query_params:
+                list_value.append(i[1])
+                text_questions += f"?,"
+            text_questions=text_questions[:-1]
+
+            query = """
+            INSERT INTO {table} ({text_params}) VALUES ({text_questions})
+            """.format(table=table_name, text_params=text_params, text_questions=text_questions)
+
+            execute_query(connection=connection, query=query, params=list_value)
+
+            connection.close()
+
+
+    def find_one_value_from_row(self, value:str, table_name:str, column_name:str, key_name:str):
+            """
+            database search function
+            by cell value with column name
+            returns a list of tuples of one table row
+            table_name: str table name
+            key_name: str key name
+            column_name: str column name
+            """
+            connection = create_connection(self.DBNAME)
+            query = f"""SELECT {value} 
+                    FROM {table_name}
+                    WHERE {column_name} = ?
+                    """ 
+            list_of_tuple = execute_query_select(connection, query=query, params=[key_name])
+            connection.close()
+            return list_of_tuple[0][0]        
+
+    def delete_table(self, table):
+            """
+            ERASE table
+            DELETE all rows from table
+            """
+            connection = create_connection(self.DBNAME)
+            query = f"""
+            DELETE FROM "{table}"
+                    """ 
+            execute_query(connection, query=query, params=[])
+            connection.close() 
+
+    def delete_row(self, table:str, key_name:str, column_name:str):
+            """
+            DELETE rows from table by key 
+            """
+            connection = create_connection(self.DBNAME)
+            query = f"""
+            DELETE FROM "{table}"
+            WHERE {column_name} = ?
+                    """ 
+            execute_query(connection, query=query, params=[key_name])
+            connection.close() 
 
 #write me :)
